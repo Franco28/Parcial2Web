@@ -1,0 +1,83 @@
+.main--centrado--temporadas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 70vh;
+}
+
+.section--centrado--temporadas {
+  max-width: 900px;
+  width: 100%;
+  padding: 32px;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.2);
+  text-align: center;
+}
+
+.temporadas-lista {
+  list-style: none;
+  padding: 0;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.temporadas-lista li {
+  background: linear-gradient(90deg, #2c2c2c, #1a1a1a);
+  padding: 14px 20px;
+  border-radius: 8px;
+  color: #eee;
+  font-size: 1rem;
+  position: relative;
+  box-shadow: 0 0 10px rgba(227, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.temporadas-lista li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 16px rgba(255, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.temporadas-lista li::before {
+  content: "📺";
+  position: absolute;
+  left: -32px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  opacity: 0.6;
+}
+
+.temporadas-lista .proxima {
+  background: #300000;
+  color: #ffaaaa;
+  font-weight: bold;
+  border: 1px solid #e30000;
+}
+
+.temporadas-lista details {
+  margin-top: 8px;
+  background-color: #111;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.temporadas-lista summary {
+  cursor: pointer;
+  color: #e30000;
+  font-weight: bold;
+}
+
+.temporadas-lista iframe {
+  margin-top: 10px;
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.2);
+}

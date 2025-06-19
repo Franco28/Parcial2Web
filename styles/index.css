@@ -1,0 +1,79 @@
+.hero {
+  background-image: url("../img/banner_gif.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  opacity: 3;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+.hero-text h2 {
+  font-family: "Nosifer", sans-serif;
+  font-size: 3rem;
+  color: red;
+}
+
+.img-banner {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20px;
+  border-radius: 30px;
+  transition: transform 0.4s ease;
+}
+
+.img-banner:hover {
+  transform: scale(1.05);
+}
+
+.section-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  cursor: default;
+  transform: scale(1.05);
+}
+
+.card h3 {
+  color: red;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
