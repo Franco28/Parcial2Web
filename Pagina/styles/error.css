@@ -1,0 +1,99 @@
+.main-content--404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 82vh;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+}
+
+.main-content--404::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/banner_error.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.32;
+  pointer-events: none;
+}
+
+.section-404--centered {
+  position: relative;
+  background: rgba(20, 0, 0, 0.67);
+  padding: 48px 32px 38px 32px;
+  border-radius: 18px;
+  box-shadow: 0 0 20px #9002;
+}
+
+.section-404--centered h2 {
+  font-size: 2.2rem;
+  color: #e30000;
+  font-family: "Nosifer", sans-serif;
+  margin-bottom: 18px;
+}
+
+.section-404--centered p {
+  font-size: 1.14rem;
+  color: #fff;
+  margin-bottom: 22px;
+}
+
+.btn-error {
+  color: #fff;
+  background-color: #e30000;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 8px rgba(227, 0, 0, 0.3);
+}
+
+.btn-error:hover {
+  background-color: #af141c;
+  transform: translateY(-2px) scale(1.05);
+  text-decoration: none;
+  box-shadow: 0 0 12px rgba(255, 50, 50, 0.6);
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .main-content--404 {
+    padding: 28px 3vw;
+    min-height: 76vh;
+  }
+
+  .section-404--centered {
+    padding: 28px 8vw 26px 8vw;
+    border-radius: 12px;
+    margin: 10px;
+  }
+
+  .section-404--centered h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Telefono */
+@media (max-width: 600px) {
+  .main-content--404 {
+    padding: 12px 0;
+    min-height: 65vh;
+  }
+
+  .section-404--centered {
+    padding: 16px 4vw 16px 4vw;
+    border-radius: 7px;
+    margin: 10px;
+  }
+
+  .section-404--centered h2 {
+    font-size: 1.09rem;
+  }
+}

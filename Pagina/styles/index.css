@@ -1,0 +1,180 @@
+.hero {
+  background-image: url("../img/banner_gif.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 50vh;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  opacity: 1;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 1.5rem 1rem;
+}
+
+.hero-text h2 {
+  font-family: "Nosifer", sans-serif;
+  font-size: 3rem;
+  color: #e30000;
+  margin: 0;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.img-banner {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20px;
+  border-radius: 30px;
+  transition: transform 0.4s ease;
+}
+
+.img-banner:hover {
+  transform: scale(1.05);
+}
+
+/* Grid de cards */
+.section-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 250px;
+  min-width: 220px;
+  max-width: 95vw;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.card:hover {
+  cursor: default;
+  transform: scale(1.05);
+}
+
+.card h3 {
+  color: #e30000;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 991px) {
+  .hero {
+    min-height: 44vh;
+    height: 52vh;
+    padding: 1.5rem 0;
+  }
+
+  .hero-text h2 {
+    font-size: 2.3rem;
+  }
+
+  .img-banner {
+    max-width: 96vw;
+    border-radius: 18px;
+    margin-top: 14px;
+  }
+
+  .section-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    margin-top: 1.4rem;
+    padding: 0 2vw;
+  }
+
+  .card {
+    width: 100%;
+    min-width: 0;
+    padding: 1.1rem;
+    border-radius: 10px;
+    margin-bottom: 0.9rem;
+    font-size: 1.03rem;
+  }
+
+  .card h3 {
+    font-size: 1.25rem;
+  }
+
+  .card p {
+    font-size: 0.97rem;
+  }
+}
+
+/* Telefono */
+@media (max-width: 600px) {
+  .hero {
+    min-height: 38vh;
+    height: 44vh;
+    padding: 1.2rem 0;
+  }
+
+  .hero-text {
+    padding: 1.2rem 0.4rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 2px #000;
+  }
+
+  .img-banner {
+    max-width: 99vw;
+    border-radius: 10px;
+    margin-top: 8px;
+  }
+
+  .section-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 1rem;
+  }
+
+  .card {
+    width: 97vw;
+    padding: 1rem;
+    border-radius: 7px;
+    font-size: 0.98rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.93rem;
+  }
+}
