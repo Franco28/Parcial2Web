@@ -44,24 +44,6 @@
   margin-bottom: 22px;
 }
 
-.btn-error {
-  color: #fff;
-  background-color: #e30000;
-  padding: 8px 16px;
-  border-radius: 30px;
-  font-weight: bold;
-  display: inline-block;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 0 8px rgba(227, 0, 0, 0.3);
-}
-
-.btn-error:hover {
-  background-color: #af141c;
-  transform: translateY(-2px) scale(1.05);
-  text-decoration: none;
-  box-shadow: 0 0 12px rgba(255, 50, 50, 0.6);
-}
-
 /* Tablet */
 @media (max-width: 991px) {
   .main-content--404 {
